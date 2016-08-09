@@ -23,7 +23,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author FABAME
  */
-public class ControlCliente extends ControlPersona implements Controlador, Serializable {
+public class ControlCliente implements Controlador, Serializable {
 
     private static List<Cliente> listadoClientes;
     private static final String ruta = "../Proyecto_De_Aula_Restaurante/datos/Clientes.txt/";
@@ -32,7 +32,7 @@ public class ControlCliente extends ControlPersona implements Controlador, Seria
         listadoClientes = null;
     }
 
-    private void inicializar() {
+    protected void inicializar() {
         try {
             listadoClientes = ControlArchivo.leerArchivo("Clientes");
             if (listadoClientes == null) {

@@ -11,6 +11,10 @@ import java.io.Serializable;
  *
  * @author FABAME
  */
-public class ControlAdministrador extends ControlPersona implements Serializable {
+public class ControlAdministrador implements Serializable {
+
+    public ControlAdministrador() {
+
+    }
 
 }

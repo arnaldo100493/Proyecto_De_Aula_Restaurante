@@ -178,7 +178,7 @@ public class ControlInsumo implements Controlador, Serializable {
         return insumo;
     }
 
-     private boolean existe(String codigo) {
+    private boolean existe(String codigo) {
         this.inicializar();
         boolean estado = false;
         Insumo insumo = this.buscar(codigo);

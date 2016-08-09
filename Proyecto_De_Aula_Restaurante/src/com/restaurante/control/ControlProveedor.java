@@ -23,7 +23,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author FABAME
  */
-public class ControlProveedor extends ControlPersona implements Controlador, Serializable {
+public class ControlProveedor implements Controlador, Serializable {
 
     private static List<Proveedor> listadoProveedores;
     private static final String ruta = "../Proyecto_De_Aula_Restaurante/datos/Proveedores.txt/";
