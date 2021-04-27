@@ -36,6 +36,10 @@ public class LimpiarComponentes {
                 ((javax.swing.JPasswordField) item).setText("");
             }
 
+            if (item.getClass().getName().equals("javax.swing.JRadioButton")) {
+                ((javax.swing.JRadioButton) item).setSelected(false);
+            }
+
             if (item.getClass().getName().equals("javax.swing.JTextArea")) {
                 ((javax.swing.JTextArea) item).setText("");
             }
